@@ -12,8 +12,9 @@ class Tile(pygame.sprite.Sprite):
 		surface.blit(self.image, (self.rect.x, self.rect.y))
 
 class TileMap():
-	def __init__(self, filename, spritesheet):
-		self.tile_size = 32
+	def __init__(self, filename, spritesheet, engine):
+		self.engine = engine
+		self.tile_size = self.engine.tile_size
 		self.start_x, self.start_y = 0, 0
 		self.spritesheet = spritesheet
 		self.tiles = self.load_tiles(filename)
@@ -21,8 +22,8 @@ class TileMap():
 		self.map_surface.set_colorkey((0, 0, 0))
 		self.load_map()
 
-	def draw_map(self, surface,xx,yy):
-		surface.blit(self.map_surface, (0-xx, 0-yy))
+	def draw_world(self):
+		self.engine.screen.blit(self.map_surface, (0 - self.engine.camera.offset.x, 0 - self.engine.camera.offset.y))
 
 	def load_map(self):
 		for tile in self.tiles:

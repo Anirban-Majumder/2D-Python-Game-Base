@@ -2,10 +2,9 @@ import pygame
 from spritesheetparser import Spritesheet
 
 class Player(pygame.sprite.Sprite):
-	def __init__(self):
+	def __init__(self,engine):
 		pygame.sprite.Sprite.__init__(self)
-		self.LEFT_KEY, self.RIGHT_KEY = False, False
-		self.UP_KEY, self.DOWN_KEY = False, False
+		self.engine = engine
 		self.friction = -0.09
 		self.image = Spritesheet('resources/Blockz').get_sprite('white.png')
 		self.image = pygame.transform.scale(self.image, (32,32))
@@ -15,26 +14,26 @@ class Player(pygame.sprite.Sprite):
 		self.max_vel = 8
 		self.bump = False
 
-	def draw(self, display,camera_offset_x,camera_offset_y):
-		display.blit(self.image, (self.rect.x - camera_offset_x, self.rect.y - camera_offset_y))
+	def draw(self):
+		self.engine.screen.blit(self.image, (self.rect.x - self.engine.camera.offset.x, self.rect.y - self.engine.camera.offset.y))
 
 
-	def update(self, dt, tiles):
+	def update(self):
 		
 		#print(self.rect)
 		#print(self.rect.w)
-		self.vertical_movement(dt)
-		self.checkCollisionsy(tiles)
+		self.vertical_movement(self.engine.dt)
+		self.checkCollisionsy(self.engine.tiles)
 		
-		self.horizontal_movement(dt)
-		self.checkCollisionsx(tiles)
+		self.horizontal_movement(self.engine.dt)
+		self.checkCollisionsx(self.engine.tiles)
 
 
 	def horizontal_movement(self,dt):		
 		self.acceleration.x = 0
-		if self.LEFT_KEY and not self.bump:
+		if self.engine.LEFT_KEY and not self.bump:
 			self.acceleration.x -= .6
-		elif self.RIGHT_KEY and not self.bump:
+		elif self.engine.RIGHT_KEY and not self.bump:
 			self.acceleration.x += .6
 		self.acceleration.x += self.velocity.x * self.friction
 		self.velocity.x += self.acceleration.x * dt
@@ -46,9 +45,9 @@ class Player(pygame.sprite.Sprite):
 
 	def vertical_movement(self,dt):
 		self.acceleration.y = 0
-		if self.UP_KEY and not self.bump:
+		if self.engine.UP_KEY and not self.bump:
 			self.acceleration.y -= .6
-		elif self.DOWN_KEY and not self.bump:
+		elif self.engine.DOWN_KEY and not self.bump:
 			self.acceleration.y += .6
 		self.acceleration.y += self.velocity.y * self.friction
 		self.velocity.y += self.acceleration.y * dt
