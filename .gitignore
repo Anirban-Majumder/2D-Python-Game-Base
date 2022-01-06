@@ -1,3 +1,1 @@
-
-*.pyc
-__pycache__/camera.cpython-38.pyc
+__pycache__
