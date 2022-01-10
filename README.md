@@ -44,11 +44,11 @@ To learn more about how to contribute, contact <contact@anirbanmajumder.tech>
 
 ### License
 
-Voice_Assistant is licensed under the MIT License. For more information, see [LICENSE.txt](https://github.com/anirbanmajumder0/2D-Python-Game-Base/blob/main/LICENSE).
+2D Python Game Base is licensed under the MIT License. For more information, see [LICENSE.txt](https://github.com/anirbanmajumder0/2D-Python-Game-Base/blob/main/LICENSE).
 
 ### Finding the Software
 
-Voice_Assistant is free and open-source software. You can find the code on
+2D Python Game Base is free and open-source software. You can find the code on
 [GitHub](https://github.com/anirbanmajumder0/2D-Python-Game-Base).
 
 ### Reporting Bugs
@@ -58,6 +58,6 @@ To report any bugs, contact me by email at <contact@anirbanmajumder.tech> or rai
 
 ### Feature Requests
 
-Feature requests for VoiceAssistant are welcome! You can send them in by email or
+Feature requests for 2D Python Game Base are welcome! You can send them in by email or
 raise an issue on the repo. When you do, create the feature request issue.
 
