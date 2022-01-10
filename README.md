@@ -14,11 +14,10 @@ build and version of Python for your operating system [here](https://python.org/
 
 #### PyPI Requirements (`pip` requirements)
 
-* `pyaudio`
-* `PYQt5`
-* `psutil`
-* `pyttsx3`
-* `speechrecognition`
+* `pygame`
+* `json`
+* `csv`
+* `abc`
 
 ### Installing and Running the software
 
