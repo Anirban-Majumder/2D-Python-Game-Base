@@ -35,3 +35,29 @@ Once everything is installed, type
 python main.py
 ```
 in your terminal to run the program.
+
+## Contributing
+
+To learn more about how to contribute, contact <contact@anirbanmajumder.tech>
+
+## Software Information
+
+### License
+
+Voice_Assistant is licensed under the MIT License. For more information, see [LICENSE.txt](https://github.com/anirbanmajumder0/2D-Python-Game-Base/LICENSE).
+
+### Finding the Software
+
+Voice_Assistant is free and open-source software. You can find the code on
+[GitHub](https://github.com/anirbanmajumder0/2D-Python-Game-Base).
+
+### Reporting Bugs
+
+To report any bugs, contact me by email at <contact@anirbanmajumder.tech> or raise an
+[issue on Github](https://github.com/anirbanmajumder0/2D-Python-Game-Base/issues).
+
+### Feature Requests
+
+Feature requests for VoiceAssistant are welcome! You can send them in by email or
+raise an issue on the repo. When you do, create the feature request issue.
+
