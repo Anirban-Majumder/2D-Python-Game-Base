@@ -44,7 +44,7 @@ To learn more about how to contribute, contact <contact@anirbanmajumder.tech>
 
 ### License
 
-Voice_Assistant is licensed under the MIT License. For more information, see [LICENSE.txt](https://github.com/anirbanmajumder0/2D-Python-Game-Base/LICENSE).
+Voice_Assistant is licensed under the MIT License. For more information, see [LICENSE.txt](https://github.com/anirbanmajumder0/2D-Python-Game-Base/blob/main/LICENSE).
 
 ### Finding the Software
 
