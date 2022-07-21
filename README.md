@@ -27,7 +27,7 @@ I will be using `python`.
 
 clone repository using
 ```
-git clone https://github.com/anirbanmajumder0/Voice_Assistant
+git clone https://github.com/anirbanmajumder0/2D-Python-Game-Base
 ```
 
 Once everything is installed, type
